@@ -1,15 +1,113 @@
 body{
-	
+	margin:0px;
+	padding: 0px;
+
+}
+
+div{
+	margin:0px;
+	padding: 0px;
 }
 
 #wrapper{
-	
+	position: relative;
+	max-width: 900px;
+	height: 100%;
+	margin:0 auto;
 }
+
+/*-----------------------------------------------------
+/Header
+/-----------------------------------------------------*/
 
 #header{
-	
+	position:relative;
+	display: block;			
+	width:100%; 
+	height: 272px;
+}
+#header-img{
+	position: relative;
 }
 
-#content{
+#header-logo{
+	position: absolute;
+	margin:12px;
+	border-radius: 5px;
+	background-color: white;
+	z-index: 1;
+	float:left;
+}
 	
+#header-pic{
+	position: absolute;
+	display: block;
+	top:0px; 
+	width: 100%;
+	height:auto;
+}
+
+#nav-bar{
+	position: absolute;
+	bottom: 0px;
+	height:100px;
+	width:100%; 
+	border-top: 4px solid #02134F;
+}
+	
+	#nav-bar ul {
+	    list-style-type: none;
+	    text-align: center;
+	    display: table;
+	    height:100px;
+	    width: 100%;
+	    margin:0px;
+	    padding:0px;
+	}
+
+		#nav-bar ul li {
+			display: table-cell;
+  			width: auto;
+  			text-align: center;
+  			
+			height:100px;
+			background-color:#0A237E;
+			
+		}
+
+		#nav-bar ul li a {
+			display:block;
+			width:100%;
+			height: 100%;
+			text-decoration: none;
+			padding-top:30px;
+			font: 25px arial, sans-serif;
+			color:white;
+		}
+
+		/* Change the link color to #111 (black) on hover */
+		#nav-bar ul li a:hover {
+			background-color: #;
+			color:black;
+		}
+
+/*-----------------------------------------------------
+/Content
+/-----------------------------------------------------*/
+#content{
+	/*min-height:900px;*/
+	height:650px;
+	width: 100%; 
+	text-align: center;
+}
+
+/*-----------------------------------------------------
+/Footer
+/-----------------------------------------------------*/
+#footer{
+	position: fixed;
+	bottom:0px;
+	width:100%;
+	height:120px;
+	background-color:#02134F;
 }
