@@ -1,7 +1,6 @@
 body{
 	margin:0px;
 	padding: 0px;
-
 }
 
 div{
@@ -11,7 +10,7 @@ div{
 
 #wrapper{
 	position: relative;
-	max-width: 900px;
+	max-width: 70%;
 	height: 100%;
 	margin:0 auto;
 }
@@ -20,37 +19,8 @@ div{
 /Header
 /-----------------------------------------------------*/
 
-#header{
-	position:relative;
-	display: block;			
-	width:100%; 
-	height: 272px;
-}
-#header-img{
-	position: relative;
-}
-
-#header-logo{
-	position: absolute;
-	margin:12px;
-	border-radius: 5px;
-	background-color: white;
-	z-index: 1;
-	float:left;
-}
-	
-#header-pic{
-	position: absolute;
-	display: block;
-	top:0px; 
-	width: 100%;
-	height:auto;
-}
-
 #nav-bar{
-	position: absolute;
-	bottom: 0px;
-	height:100px;
+	height:80px;
 	width:100%; 
 	border-top: 4px solid #02134F;
 }
@@ -59,7 +29,7 @@ div{
 	    list-style-type: none;
 	    text-align: center;
 	    display: table;
-	    height:100px;
+	    height:100%;
 	    width: 100%;
 	    margin:0px;
 	    padding:0px;
@@ -70,8 +40,8 @@ div{
   			width: auto;
   			text-align: center;
   			
-			height:100px;
-			background-color:#0A237E;
+			height:100%;
+			background-color:#171C7A;
 			
 		}
 
@@ -80,7 +50,7 @@ div{
 			width:100%;
 			height: 100%;
 			text-decoration: none;
-			padding-top:30px;
+			padding-top:20px;
 			font: 25px arial, sans-serif;
 			color:white;
 		}
@@ -95,27 +65,43 @@ div{
 /Content
 /-----------------------------------------------------*/
 #content{
-	min-height:650px;
+	min-height:900px;
 	width: 100%; 
-	text-align: center;
-	padding-left: 10px;
 }
-
 	.left-content{
 		text-align: center;
+		float:left;
+		width:60%;
+		height:100%;
+	}
+		#slider{
+			margin-top:20px;
+			width:100%;
+			height:450px;
+		}
+
+			#slider img{
+				width:100%;
+				height:auto; 
+			}
+
+	.right-content{
 		float:left;
 		width:40%;
 		height:100%;
 		font:25px arial,sans-serif;
 		font-weight: bold;
+		text-align: center;
 	}
+
+
 		#news{
 			margin:0 auto;
 			margin-top: 20px;
 			border:1px solid black;
 			border-radius: 3px;
-			width:100%;
-			height:350px;
+			width:90%;
+			height:365px;
 			overflow: scroll;
 			overflow-x: hidden;
 			padding-left: 10px;
@@ -129,33 +115,38 @@ div{
 				border-bottom:3px dotted #2D4CBD;
 			}
 
-	.right-content{
-		float:left;
-		width:60%;
-		height:100%;
-	}
+#sponsors{
+	position: absolute;
+	bottom:120px;
+	background-color:;
+	width:100%;
+	height: 130px;
+	border-top:2px solid #171C7A;
+	text-align: center;
+}
 
-		#slider{
-			background:blue;
-			margin:0 auto;
-			margin-top:20px;
-			width:80%;
-			height:280px;
-		}
+#sponsors img{
+	margin:30px 60px;
+}
+
+#hsb{
+	height:80px;
+	width: auto;
+}
 
 /*-----------------------------------------------------
 /Footer
 /-----------------------------------------------------*/
 #footer{
-	position: fixed;
+	position:absolute;
 	bottom:0px;
 	width:100%;
 	height:120px;
-	background-color:#02134F;
+	background-color:#171C7A;
 }
 
 #footer div{
-	width:900px;
+	width:70%;
 	margin:0 auto;
 	height:100%;
 }
@@ -170,3 +161,4 @@ div{
 	color:white;
 	font-size: 12px;
 }
+
